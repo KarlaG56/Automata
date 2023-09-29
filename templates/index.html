@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validador de Cadenas</title>
     <script src="/static/validador.js"></script>
+    <link rel="stylesheet"  href="/static/style.css">
 </head>
 <body>
-    <label>Inserte la cadena</label>
-    <input type="text" id="cadena">
-    <input type="button" value="Validar" onclick="validarCadena()">
+    <div class="container"> 
+        <div class="div-inf">
+            <div class="text">
+             <label>Inserte la cadena</label>
+            </div>
+            <div class="div-input"> 
+                <input  type="text" id="cadena">
+                <input  class="btn" type="button" value="Validar" onclick="validarCadena()">
+            </div>
+
+            <div class="div-resultados" > 
+                <div id="resultado"></div>
+                <div id="recorrido"></div>
+            </div>
+            
+        </div>
+    </div>
     
-    <div id="resultado"></div>
-    <div id="recorrido"></div>
 </body>
 </html>
 
